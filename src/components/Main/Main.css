@@ -32,17 +32,14 @@
   letter-spacing: 1.4px;
 }
 .main__list-btn {
-  display: flex;
-  flex-direction: column;
   margin: 50px auto 0px;
   list-style-type: none;
   padding: 0px;
-}
-.main__item-btn {
-  margin-bottom: 25px;
-}
-.main__item-btn:last-of-type {
-  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
 }
 .main__link-btn {
   border-radius: 10px;

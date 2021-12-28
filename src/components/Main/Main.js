@@ -16,6 +16,9 @@ function Main() {
         <li className="main__item-btn">
           <a className="main__link-btn" href="#" rel="noreferrer" target="_blank">Аналитика по обучению</a>
         </li>
+        <li className="main__item-btn">
+          <a className="main__link-btn" href="#" rel="noreferrer" target="_blank">Расчет сметы</a>
+        </li>
       </ul>
     </main>
   );

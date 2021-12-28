@@ -31,7 +31,7 @@ function Header() {
             <p className="nav__link">Аналитика</p>
           </li>
           <li className="nav__item">
-            <p className="nav__link">Контакты</p>
+            <p className="nav__link">Смета</p>
           </li>
         </ul>
       </nav>
