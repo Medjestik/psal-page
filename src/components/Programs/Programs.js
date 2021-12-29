@@ -42,7 +42,7 @@ function Programs() {
         <li className="programs__item">
           <img className="programs__img" src={programMonit} alt="иконка программы"></img>
           <h5 className="programs__item-title">Мониторинг качества создания объектов дорожной инфраструктуры для беспилотного движения</h5>
-          <a className="programs__item-link" href="#" rel="noreferrer" target="_blank">
+          <a className="programs__item-link" href="https://edu.emiit.ru/ivan/dpp/dpp-monit.pdf" rel="noreferrer" target="_blank">
             <span className="programs__item-link-text">Подробнее</span>
             <span className="programs__item-link-arrow">&#10140;</span>
           </a>
