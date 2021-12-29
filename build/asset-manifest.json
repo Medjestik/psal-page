@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.25e707e5.css",
-    "main.js": "/static/js/main.92586796.js",
+    "main.css": "/static/css/main.14652a52.css",
+    "main.js": "/static/js/main.21c1fc03.js",
     "static/js/787.3bc0fae0.chunk.js": "/static/js/787.3bc0fae0.chunk.js",
     "static/media/overlay.mp4": "/static/media/overlay.c94e85825c8ba49d6b55.mp4",
     "static/media/Raleway-Light.eot": "/static/media/Raleway-Light.858e963c364888c36fa8.eot",
@@ -36,12 +36,12 @@
     "static/media/logo-mintrans-white.png": "/static/media/logo-mintrans-white.dc63d0517488916344aa.png",
     "static/media/logo-rut-white.png": "/static/media/logo-rut-white.9b1c95d8ca4dc53641dd.png",
     "index.html": "/index.html",
-    "main.25e707e5.css.map": "/static/css/main.25e707e5.css.map",
-    "main.92586796.js.map": "/static/js/main.92586796.js.map",
+    "main.14652a52.css.map": "/static/css/main.14652a52.css.map",
+    "main.21c1fc03.js.map": "/static/js/main.21c1fc03.js.map",
     "787.3bc0fae0.chunk.js.map": "/static/js/787.3bc0fae0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25e707e5.css",
-    "static/js/main.92586796.js"
+    "static/css/main.14652a52.css",
+    "static/js/main.21c1fc03.js"
   ]
 }

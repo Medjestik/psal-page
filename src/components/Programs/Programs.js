@@ -31,7 +31,7 @@ function Programs() {
         <li className="programs__item">
           <img className="programs__img" src={programDig} alt="иконка программы"></img>
           <h5 className="programs__item-title">Цифровая трансформация в экономике</h5>
-          <a className="programs__item-link" href="#" rel="noreferrer" target="_blank">
+          <a className="programs__item-link" href="https://edu.emiit.ru/ivan/dpp/dpp-dig.pdf" rel="noreferrer" target="_blank">
             <span className="programs__item-link-text">Подробнее</span>
             <span className="programs__item-link-arrow">&#10140;</span>
           </a>
@@ -58,7 +58,7 @@ function Programs() {
         <li className="programs__item">
           <img className="programs__img" src={programIts} alt="иконка программы"></img>
           <h5 className="programs__item-title">Разработка проектов интеллектуальных транспортных систем: технико-экономическое обоснование и информационное сопровождение на этапе внедрения</h5>
-          <a className="programs__item-link" href="#" rel="noreferrer" target="_blank">
+          <a className="programs__item-link" href="https://edu.emiit.ru/ivan/dpp/dpp-its.pdf" rel="noreferrer" target="_blank">
             <span className="programs__item-link-text">Подробнее</span>
             <span className="programs__item-link-arrow">&#10140;</span>
           </a>
