@@ -1,17 +1,17 @@
 .page {
-  --title-color: #262626;
+  --title-color: #343434;
   --subtitle-color: #404040;
   --white-color: #ffffff;
-  --background-main-color: #f4f4f6;
+  --background-main-color: #F4F4F6;
   --background-secondary-color: #fafafa;
   --background-third-color: #F3F3F3;
-  --main-color: #172c7f;
-  --secondary-color: #f32232;
+  --main-color: #001B71;
+  --secondary-color: #F32735;
   --border-card-color: #DDDDDD;
   color: var(--subtitle-color);
   background-color: var(--background-main-color);
   box-sizing: border-box;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Geometria', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   -moz-osx-font-smoothing: grayscale;
@@ -26,8 +26,9 @@
   scroll-behavior: smooth;
 }
 .container {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0px auto;
+  box-sizing: border-box;
 }
 
 @media all and (max-width: 1400px) {

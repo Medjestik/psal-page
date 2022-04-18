@@ -1,0 +1,13 @@
+.login__forgot-password {
+  margin: 40px 0px 0px 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.15px;
+  color: var(--secondary-color);
+  transition: all .3s ease-in-out;
+}
+.login__forgot-password:hover {
+  cursor: pointer;
+  opacity: .7;
+}

@@ -1,25 +1,25 @@
 import React from 'react';
 import './Main.css';
+import Marquee from "react-fast-marquee";
+import { Link } from 'react-scroll';
 
 function Main() {
   return (
-    <main className="container main">
-      <h1 className="main__title">Образовательный&nbsp;портал Приоритет&nbsp;<span className="main__title_type_highlight-secondary">2030</span></h1>
-      <p className="main__subtitle">лидерами&nbsp;становятся</p>
-      <ul className="main__list-btn">
-        <li className="main__item-btn">
-          <a className="main__link-btn" href="https://edu.emiit.ru/" rel="noreferrer" target="_blank">Обучение по программам</a>
-        </li>
-        <li className="main__item-btn">
-          <a className="main__link-btn" href="https://constructor.emiit.ru/" rel="noreferrer" target="_blank">Проектирование программ</a>
-        </li>
-        <li className="main__item-btn">
-          <a className="main__link-btn" href="#" rel="noreferrer" target="_blank">Аналитика по обучению</a>
-        </li>
-        <li className="main__item-btn">
-          <a className="main__link-btn" href="#" rel="noreferrer" target="_blank">Расчет сметы</a>
-        </li>
-      </ul>
+    <main className='container main' id='main'>
+      <p className='main__subtitle'>программа&nbsp;стратегического академического&nbsp;лидерства</p>
+      <h1 className='main__title'>ПРИОРИТЕТ&nbsp;2030</h1>
+      <Marquee gradient={false} speed={120} >
+        <span className='main__marquee'>#МЫСОЗДАЕМДВИЖЕНИЕ</span>
+        <span className='main__marquee'>РОССИЙСКИЙ УНИВЕРСИТЕТ ТРАНСПОРТА</span>
+        <span className='main__marquee'>ПРИОРИТЕТ 2030</span>
+        <span className='main__marquee'>ЛИДЕРАМИ СТАНОВЯТСЯ</span>
+        <span className='main__marquee'>#МЫСОЗДАЕМДВИЖЕНИЕ</span>
+        <span className='main__marquee'>РОССИЙСКИЙ УНИВЕРСИТЕТ ТРАНСПОРТА</span>
+        <span className='main__marquee'>ПРИОРИТЕТ 2030</span>
+        <span className='main__marquee'>ЛИДЕРАМИ СТАНОВЯТСЯ</span>
+      </Marquee>
+      <Link className='main__arrow' to='description' smooth={true} offset={20} duration= {1000}></Link>
+      <div className='main__round'></div>
     </main>
   );
 }
