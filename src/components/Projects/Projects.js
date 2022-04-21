@@ -12,22 +12,22 @@ function Projects({ onLogin }) {
       </div>
       <ul className='project__list'>
           <li className='project__item'>
-            <img className='project__icon' src={iconOne} alt='иконка проекта'></img>
+            <img className='project__icon' src={iconThree} alt='иконка проекта'></img> 
             <h3 className='project__title'>Курсы</h3>
-            <p className='project__subtitle'>Описание</p>
-            <button className='project__link' onClick={onLogin}>На портал обучения</button>
+            <p className='project__subtitle'></p>
+            <Link className='project__link' to='programs' smooth={true} offset={-100} duration= {500}>К перечню программ</Link>
+          </li>
+          <li className='project__item'>
+            <img className='project__icon' src={iconOne} alt='иконка проекта'></img>
+            <h3 className='project__title'>Методические материалы</h3>
+            <p className='project__subtitle'></p>
+            <a className='project__link' href='https://dpo.emiit.ru/' target='_blank' rel='noreferrer'>В конструктор ДПП</a>
           </li>
           <li className='project__item'>
             <img className='project__icon' src={iconSecond} alt='иконка проекта'></img>
             <h3 className='project__title'>Конструктор</h3>
-            <p className='project__subtitle'>Описание</p>
+            <p className='project__subtitle'></p>
             <a className='project__link' href='https://constructor.emiit.ru/' target='_blank' rel='noreferrer'>В конструктор ДПП</a>
-          </li>
-          <li className='project__item'>
-            <img className='project__icon' src={iconThree} alt='иконка проекта'></img> 
-            <h3 className='project__title'>Программы</h3>
-            <p className='project__subtitle'>Описание</p>
-            <Link className='project__link' to='programs' smooth={true} offset={-100} duration= {500}>К перечню программ</Link>
           </li>
         </ul>
     </div>
