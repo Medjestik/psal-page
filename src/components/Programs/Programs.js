@@ -1,49 +1,40 @@
 import React from 'react';
 import './Programs.css';
+import { programs } from '../../utils/dpo.js';
 
 function Programs() {
+
   return (
     <div className='container programs' id='programs'>
       <div className='programs__round'></div>
       <h2 className='programs__title'>ДОПОЛНИТЕЛЬНЫЕ ПРОФЕССИОНАЛЬНЫЕ ПРОГРАММЫ</h2>
+
       <ul className='programs__list'>
-        <li className='programs__item'>
-          <div className='programs__top programs__one'>
-            <div className='programs__tags'>
-              <span className='programs__tag'>тим</span>
-              <span className='programs__tag'>жизненный цикл</span>
+      {
+        programs.map((elem) => (
+          <li className='programs__item' key={elem.id}>
+            <div className={`programs__top programs__top_type_${elem.id}`}>
+              <div className='programs__tags'>
+                {
+                  elem.tags.map((tag, i) =>(
+                    <span key={i} className='programs__tag'>{tag}</span>
+                  ))
+                }
+              </div>
+              <a className='programs__btn' href='https://forms.yandex.ru/u/6343d6cf9f6bab2789f7429c/' target='_blank' rel='noreferrer'> </a>
             </div>
-            <button className='programs__btn'></button>
-          </div>
-          <div className='programs__bottom'>
-            <p className='programs__text'>Применение технологий информационного моделирования на различных стадиях жизненного цикла автомобильных дорог и объектов транспортной инфраструктуры</p>
-          </div>
-        </li>
-        <li className='programs__item'>
-          <div className='programs__top programs__two'>
-            <div className='programs__tags'>
-              <span className='programs__tag'>итс</span>
-              <span className='programs__tag'>внедрение</span>
+            <div className='programs__bottom'>
+              <p className='programs__text'>{elem.name}</p>
             </div>
-            <button className='programs__btn'></button>
-          </div>
-          <div className='programs__bottom'>
-            <p className='programs__text'>Разработка проектов интеллектуальных транспортных систем: технико-экономическое обоснование и информационное сопровождение на этапе внедрения</p>
-          </div>
-        </li>
-        <li className='programs__item'>
-          <div className='programs__top programs__three'>
-            <div className='programs__tags'>
-              <span className='programs__tag'>мониторинг</span>
-              <span className='programs__tag'>беспилотники</span>
-            </div>
-            <button className='programs__btn'></button>
-          </div>
-          <div className='programs__bottom'>
-            <p className='programs__text'>Мониторинг качества создания объектов дорожной инфраструктуры для беспилотного движения</p>
-          </div>
-        </li>
+          </li>
+        ))
+      }
       </ul>
+
+      <div className='programs__link-container'>
+        <a className='programs__link' href='https://forms.yandex.ru/u/6343d6cf9f6bab2789f7429c/' target='_blank' rel='noreferrer'>Подать заявку на обучение</a>
+      </div>
+
     </div>
   );
 }

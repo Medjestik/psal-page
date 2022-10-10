@@ -134,3 +134,9 @@
     padding: 6.5px 18px;
   }
 }
+
+@media all and (max-width: 1023px) {
+  .header {
+    padding: 12px 16px;
+  }
+}

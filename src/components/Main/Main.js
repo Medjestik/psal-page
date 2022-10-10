@@ -3,11 +3,23 @@ import './Main.css';
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-scroll';
 
-function Main() {
+function Main({ windowWidth }) {
   return (
     <main className='container main' id='main'>
-      <p className='main__subtitle'>программа&nbsp;стратегического академического&nbsp;лидерства</p>
-      <h1 className='main__title'>ПРИОРИТЕТ&nbsp;2030</h1>
+      {
+        windowWidth > 1023 
+        ?
+        <>
+          <p className='main__subtitle'>программа&nbsp;стратегического академического&nbsp;лидерства</p>
+          <h1 className='main__title'>ПРИОРИТЕТ&nbsp;2030</h1>
+        </>
+        :
+        <>
+          <p className='main__subtitle'>программа стратегического академического лидерства</p>
+          <h1 className='main__title'>ПРИОРИТЕТ 2030</h1>
+        </>
+      }
+
       <Marquee gradient={false} speed={120} >
         <span className='main__marquee'>#МЫСОЗДАЕМДВИЖЕНИЕ</span>
         <span className='main__marquee'>РОССИЙСКИЙ УНИВЕРСИТЕТ ТРАНСПОРТА</span>
@@ -18,7 +30,21 @@ function Main() {
         <span className='main__marquee'>ПРИОРИТЕТ 2030</span>
         <span className='main__marquee'>ЛИДЕРАМИ СТАНОВЯТСЯ</span>
       </Marquee>
-      <Link className='main__arrow' to='description' smooth={true} offset={20} duration= {1000}></Link>
+      {
+        windowWidth > 1023 
+        ?
+        <>
+        <Link className='main__button' to='programs' smooth={true} offset={-80} duration= {2000} spy={true}>ДПО для образовательных организаций</Link>
+        <Link className='main__arrow' to='description' smooth={true} offset={20} duration= {1000}></Link>
+        </>
+        :
+        <>
+        <Link className='main__button' to='programs' smooth={true} offset={-100} duration= {2000} spy={true}>Программы ДПО</Link>
+        <a className='main__button_type_enter' href='https://dpo.emiit.ru/' target='_blank' rel='noreferrer'>Вход на обучение</a>
+        <Link className='main__arrow' to='project' smooth={true} offset={-100} duration= {1000}></Link>
+        </>
+      }
+
       <div className='main__round'></div>
     </main>
   );
