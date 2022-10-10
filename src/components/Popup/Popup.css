@@ -77,7 +77,7 @@
   width: 900px;
 }
 .popup__title {
-  margin: 0px 0px 30px 0px;
+  margin: 20px 0px 30px 0px;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -216,4 +216,20 @@
 }
 .popup__error-request_visible_hide {
   opacity: 0;
+}
+
+@media all and (max-width: 1023px) {
+  .popup {
+    display: flex;
+    justify-content: center;
+  }
+  .popup__container {
+    margin: 15vh 16px 0px 16px;
+    padding: 34px 16px 28px;
+    max-width: auto;
+    width: auto;
+  }
+  .popup__form {
+    width: auto;
+  }
 }

@@ -82,7 +82,7 @@ function Login({ onLogin, loginError, setLoginError, isOpen, onClose }) {
       isOpen={isOpen}
       onClose={onClose}
     >
-      <form className="popup__form" name="login-form"noValidate onSubmit={handleSubmit}>
+      <form className="popup__form" name="login-form" noValidate onSubmit={handleSubmit}>
         <h3 className="popup__title">Для входа на портал обучения введите полученные логин и&nbsp;пароль и&nbsp;нажмите кнопку &laquo;Войти&raquo;.</h3>
         <div className="popup__form-line">
           <input 

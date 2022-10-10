@@ -1,8 +1,27 @@
 import React from 'react';
 import './Programs.css';
 import { programs } from '../../utils/dpo.js';
+import InfoPopup from '../Popup/InfoPopup/InfoPopup.js';
 
 function Programs() {
+
+  const [isInfoPopupOpen, setIsInfoPopupOpen] = React.useState(false);
+  const [currentProgram, setCurrentProgram] = React.useState({});
+
+  function programInfo(program) {
+    setCurrentProgram(program);
+    setIsInfoPopupOpen(true);
+  }
+
+  function closeInfoPopup() {
+    setIsInfoPopupOpen(false);
+  }
+
+  React.useEffect(() => {
+    return(() => {
+      setCurrentProgram({});
+    })
+  }, []);
 
   return (
     <div className='container programs' id='programs'>
@@ -21,7 +40,7 @@ function Programs() {
                   ))
                 }
               </div>
-              <a className='programs__btn' href='https://forms.yandex.ru/u/6343d6cf9f6bab2789f7429c/' target='_blank' rel='noreferrer'> </a>
+              <div className='programs__btn' onClick={() => programInfo(elem)}></div>
             </div>
             <div className='programs__bottom'>
               <p className='programs__text'>{elem.name}</p>
@@ -34,6 +53,15 @@ function Programs() {
       <div className='programs__link-container'>
         <a className='programs__link' href='https://forms.yandex.ru/u/6343d6cf9f6bab2789f7429c/' target='_blank' rel='noreferrer'>Подать заявку на обучение</a>
       </div>
+
+      {
+        isInfoPopupOpen &&
+        <InfoPopup
+          currentProgram={currentProgram}
+          isOpen={isInfoPopupOpen}
+          onClose={closeInfoPopup}
+        />
+      }
 
     </div>
   );
