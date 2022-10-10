@@ -26,8 +26,6 @@ function App() {
     setWindowWidth(window.innerWidth);
   }, [windowWidth]);
 
-  console.log(windowWidth);
-
   return (
     <div className='page'>
 
