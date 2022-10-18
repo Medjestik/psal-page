@@ -25,7 +25,7 @@ function Footer({ windowWidth }) {
               <div className='footer__title'></div>
             }
             <Link className='footer__link' to='projects' smooth={true} offset={-80} duration= {1000}>проекты</Link>
-            <Link className='footer__link' to='programs' smooth={true} offset={-80} duration= {500}>дпп</Link>
+            <Link className='footer__link' to='programs' smooth={true} offset={-80} duration= {500}>программы</Link>
           </div>
           <div className='footer__column footer__column_type_large'>
             <h4 className='footer__title'>Ресурсы</h4>
@@ -33,7 +33,7 @@ function Footer({ windowWidth }) {
             <a className='footer__link' href='https://www.miit.ru/' target='_blank' rel='noreferrer'>РУТ (МИИТ)</a>
           </div>
         </div>
-        <p className='footer__copy'>&copy; 2021 "Российский университет транспорта"</p>
+        <p className='footer__copy'>&copy; 2022 "Российский университет транспорта"</p>
       </footer>
     }
     </>

@@ -46,7 +46,7 @@ function Header({ windowWidth }) {
               <div className={`nav__link-round ${isColoredHeader ? 'nav__link-round_type_color' : ''}`}></div>
             </li>
             <li className='nav__item'>
-              <Link activeClass='nav__link_type_active' className={`nav__link ${isColoredHeader ? 'nav__link_type_color' : ''}`} to='programs' smooth={true} offset={-80} duration= {2000} spy={true}>дпп</Link>
+              <Link activeClass='nav__link_type_active' className={`nav__link ${isColoredHeader ? 'nav__link_type_color' : ''}`} to='programs' smooth={true} offset={-80} duration= {2000} spy={true}>программы</Link>
               <div className={`nav__link-round ${isColoredHeader ? 'nav__link-round_type_color' : ''}`}></div>
             </li>
           </ul>

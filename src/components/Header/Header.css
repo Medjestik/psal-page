@@ -87,6 +87,9 @@
   font-size: 20px;
   line-height: 26px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--white-color);
   background: var(--secondary-color);
   padding: 8.5px 28px;

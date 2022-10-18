@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import PageOverlay from '../PageOverlay/PageOverlay.js';
 import Header from '../Header/Header.js';
 import Main from '../Main/Main.js';
@@ -7,6 +8,7 @@ import Description from '../Description/Description.js';
 import Projects from '../Projects/Projects.js';
 import Programs from '../Programs/Programs.js';
 import Footer from '../Footer/Footer.js';
+import Qualification from '../Qualification/Qualification.js';
 
 function App() {
 
@@ -28,14 +30,27 @@ function App() {
 
   return (
     <div className='page'>
+      <Routes>
 
-      <PageOverlay />
-      <Header windowWidth={windowWidth} />
-      <Main windowWidth={windowWidth} />
-      <Description windowWidth={windowWidth} />
-      <Projects windowWidth={windowWidth} />
-      <Programs />
-      <Footer windowWidth={windowWidth} />
+        <Route exact path='/' element={
+          <>
+          <PageOverlay />
+          <Header windowWidth={windowWidth} />
+          <Main windowWidth={windowWidth} />
+          <Description windowWidth={windowWidth} />
+          <Projects windowWidth={windowWidth} />
+          <Programs />
+          <Footer windowWidth={windowWidth} /> 
+          </>
+        }/>
+
+        <Route exact path='/qualification' element={
+          <>
+          <Qualification windowWidth={windowWidth} />
+          </>
+        }/>
+
+      </Routes>
 
     </div>
   );
