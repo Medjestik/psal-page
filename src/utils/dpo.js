@@ -60,7 +60,7 @@ export const qualificationPrograms = [
     date: '14.11.2022 — 02.12.2022',
     link: 'https://forms.yandex.ru/u/636b9c63c417f30320e26aa0/',
     id: '1',
-    active: false,
+    active: true,
   },
   { 
     name: 'Дистанционные образовательные технологии в\u00A0профессиональном образовании',
@@ -70,7 +70,7 @@ export const qualificationPrograms = [
     date: '14.11.2022 — 09.12.2022',
     link: 'https://forms.yandex.ru/u/636b9c63c417f30320e26aa0/',
     id: '2',
-    active: false,
+    active: true,
   },
   { 
     name: 'Правовая и антикоррупционная культура научно-педагогических работников образовательных организаций',
@@ -80,7 +80,7 @@ export const qualificationPrograms = [
     date: '15.11.2022 — 02.12.2022',
     link: 'https://forms.yandex.ru/u/636b8ce4693872d796bb186c/',
     id: '3',
-    active: false,
+    active: true,
   },
   { 
     name: 'Цифровая трансформация в\u00A0экономике',
@@ -90,7 +90,7 @@ export const qualificationPrograms = [
     date: '14.11.2022 — 09.12.2022',
     link: 'https://forms.yandex.ru/u/636b9c63c417f30320e26aa0/',
     id: '4',
-    active: false,
+    active: true,
   },
   { 
     name: 'Общий курс железных дорог. Введение',
@@ -110,7 +110,7 @@ export const qualificationPrograms = [
     date: '14.11.2022 — 09.12.2022',
     link: 'https://forms.yandex.ru/u/636b9c63c417f30320e26aa0/',
     id: '6',
-    active: false,
+    active: true,
   },
   { 
     name: 'Введение в\u00A0технологию информационного моделирования объектов транспортной инфраструктуры',
@@ -120,7 +120,7 @@ export const qualificationPrograms = [
     date: '21.11.2022 — 16.12.2022',
     link: 'https://forms.yandex.ru/u/636b9dba068ff0031caf7909/',
     id: '7',
-    active: false,
+    active: true,
   },
   { 
     name: 'Применение технологий информационного моделирования на\u00A0различных стадиях жизненного цикла автомобильных дорог и\u00A0объектов транспортной инфраструктуры',
@@ -130,6 +130,6 @@ export const qualificationPrograms = [
     date: '14.11.2022 — 09.12.2022',
     link: 'https://forms.yandex.ru/u/636b9c63c417f30320e26aa0/',
     id: '9',
-    active: false,
+    active: true,
   },
 ]

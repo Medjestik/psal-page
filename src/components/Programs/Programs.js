@@ -40,7 +40,13 @@ function Programs() {
                   ))
                 }
               </div>
-              <div className={`programs__btn ${elem.active ? '' : 'programs__btn_type_block'}`}></div>
+              {
+                elem.active
+                ?
+                <div className='programs__btn' onClick={() => programInfo(elem)}></div>
+                :
+                <div className='programs__btn programs__btn_type_block'></div>
+              }
             </div>
             <div className='programs__bottom'>
               <p className='programs__text'>{elem.name}</p>
@@ -51,7 +57,7 @@ function Programs() {
       </ul>
 
       <div className='programs__link-container'>
-        <a className='programs__link' href='https://forms.yandex.ru/u/6343d6cf9f6bab2789f7429c/' target='_blank' rel='noreferrer'>Подать заявку на обучение</a>
+
       </div>
 
       {

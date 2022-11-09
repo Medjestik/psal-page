@@ -60,7 +60,13 @@ function Qualification({ windowWidth }) {
                   }
                   <span className='programs__tag programs__tag_type_hours'>{elem.hours} ч.</span>
                 </div>
-                <div className={`programs__btn ${elem.active ? '' : 'programs__btn_type_block'}`} onClick={() => programInfo(elem)}></div>
+                {
+                  elem.active
+                  ?
+                  <div className='programs__btn' onClick={() => programInfo(elem)}></div>
+                  :
+                  <div className='programs__btn programs__btn_type_block'></div>
+                }
               </div>
               <div className='programs__bottom'>
                 <p className='programs__text'>{elem.name}</p>
@@ -91,7 +97,7 @@ function Qualification({ windowWidth }) {
           <div className='qualification__info-separate'></div>
           <div className='qualification__info-request'>
             <p className='qualification__info-text'>Для обучения профессорско-преподавательского состава и других категорий работников транспортных образовательных организаций по предлагаемым программам необходимо до 31 октября 2022 года централизованно от образовательной организации заполнить заявку на обучение.</p>
-            <a className='qualification__info-request-btn' href='https://forms.yandex.ru/u/6343d6cf9f6bab2789f7429c/' target='_blank' rel='noreferrer'>Подать заявку</a>
+
             <p className='qualification__info-text qualification__info-text_type_margin-top qualification__info-text_type_contact'>Контактное лицо в Российском университете транспорта – Петрова Лариса Вячеславовна.</p>
             <p className='qualification__info-text qualification__info-text_type_margin-top qualification__info-text_type_contact'>Телефон: +7(499)262-93-26 или +7(903)016-06-15</p>
             <p className='qualification__info-text qualification__info-text_type_margin-top qualification__info-text_type_contact'>Электронная почта – plv@raps.edu.ru</p>
