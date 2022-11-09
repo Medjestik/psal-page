@@ -68,6 +68,10 @@
   user-select: none;
   pointer-events: none;
 }
+.programs__tag_type_hours {
+  margin: 0px 0px 0px auto;
+  background: var(--main-color);
+}
 .programs__btn {
   position: absolute;
   bottom: -32px;
@@ -87,6 +91,11 @@
 .programs__btn:hover {
   cursor: pointer;
   background-color: var(--main-color);
+}
+.programs__btn_type_block:hover {
+  user-select: none;
+  pointer-events: none;
+  background-color: var(--secondary-color);
 }
 .programs__top_type_1 {
   background-image: url('../../images/programs/program-1.png');
@@ -146,15 +155,25 @@
   margin: 0px;
   padding: 40px 48px;
   min-height: 218px;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
 }
 .programs__text {
-  margin: 0px;
+  margin: 0px 0px 12px 0px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: -0.01em;
+  color: var(--title-color);
+}
+.programs__date {
+  margin: auto 0px 0px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   color: var(--title-color);
 }
 .programs__link-container {
@@ -203,6 +222,7 @@
   .programs__item {
     width: 400px;
   }
+
 }
 
 @media all and (max-width: 1420px) {
@@ -222,6 +242,16 @@
     bottom: -24px;
     width: 48px;
     height: 48px;
+  }
+  .programs__tags {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .programs__tag {
+    margin: 0px 12px 12px 0px;
+  }
+  .programs__tag_type_hours {
+    margin: 0px 0px 0px 0px;
   }
 }
 

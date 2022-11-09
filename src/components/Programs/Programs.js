@@ -40,7 +40,7 @@ function Programs() {
                   ))
                 }
               </div>
-              <div className='programs__btn' onClick={() => programInfo(elem)}></div>
+              <div className={`programs__btn ${elem.active ? '' : 'programs__btn_type_block'}`}></div>
             </div>
             <div className='programs__bottom'>
               <p className='programs__text'>{elem.name}</p>
