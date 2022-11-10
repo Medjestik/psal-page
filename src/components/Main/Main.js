@@ -36,13 +36,17 @@ function Main({ windowWidth }) {
         ?
         <>
         <NavLink className='main__button' to='/qualification'>Программы повышения квалификации для&nbsp;транспортных образовательных организаций</NavLink>
-        <Link className='main__arrow' to='description' smooth={true} offset={20} duration= {1000}></Link>
+        {
+          /* <Link className='main__arrow' to='description' smooth={true} offset={20} duration= {1000}></Link> */
+        }
         </>
         :
         <>
         <NavLink className='main__button' to='/qualification'>Программы повышения квалификации для&nbsp;транспортных образовательных организаций</NavLink>
         <a className='main__button_type_enter' href='https://dpo.emiit.ru/' target='_blank' rel='noreferrer'>Вход на обучение</a>
-        <Link className='main__arrow' to='project' smooth={true} offset={-100} duration= {1000}></Link>
+        {
+          /* <Link className='main__arrow' to='project' smooth={true} offset={-100} duration= {1000}></Link> */
+        }
         </>
       }
 
