@@ -200,6 +200,19 @@
   line-height: 23px;
   color: var(--title-color);
 }
+.programs__more {
+  margin: auto 0px 0px 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-color);
+  transition: all .3s ease-in-out;
+}
+.programs__more:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
 .programs__link-container {
   position: relative;
   width: 100%;

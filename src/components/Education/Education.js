@@ -67,7 +67,7 @@ function Education({ windowWidth }) {
               </div>
               <div className='programs__bottom'>
                 <p className='programs__text'>{elem.name}</p>
-                <p className='programs__date'>{elem.date}</p>
+                <span className='programs__more'>Подробнее &#8594;</span>
               </div>
             </li>
           ))
