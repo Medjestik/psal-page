@@ -151,6 +151,30 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.programs__top_type_course_1 {
+  background-image: url('../../images/programs/course-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.programs__top_type_course_2 {
+  background-image: url('../../images/programs/course-2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.programs__top_type_course_3 {
+  background-image: url('../../images/programs/course-3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.programs__top_type_course_4 {
+  background-image: url('../../images/programs/course-4.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .programs__bottom {
   margin: 0px;
   padding: 40px 48px;

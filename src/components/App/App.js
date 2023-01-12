@@ -9,6 +9,7 @@ import Projects from '../Projects/Projects.js';
 import Programs from '../Programs/Programs.js';
 import Footer from '../Footer/Footer.js';
 import Qualification from '../Qualification/Qualification.js';
+import Education from '../Education/Education.js';
 
 function App() {
 
@@ -47,6 +48,12 @@ function App() {
         <Route exact path='/qualification' element={
           <>
           <Qualification windowWidth={windowWidth} />
+          </>
+        }/>
+
+        <Route exact path='/education' element={
+          <>
+          <Education windowWidth={windowWidth} />
           </>
         }/>
 

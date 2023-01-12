@@ -35,7 +35,8 @@ function Main({ windowWidth }) {
         windowWidth > 1023 
         ?
         <>
-        <NavLink className='main__button' to='/qualification'>Программы повышения квалификации для&nbsp;транспортных образовательных организаций</NavLink>
+        <NavLink className='main__button' to='/qualification'>Программы повышения квалификации</NavLink>
+        <NavLink className='main__button main__button_type_education' to='/education'>Обучение студентов</NavLink>
         {
           /* <Link className='main__arrow' to='description' smooth={true} offset={20} duration= {1000}></Link> */
         }

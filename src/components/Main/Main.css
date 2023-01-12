@@ -39,10 +39,10 @@
   color: var(--white-color);
 }
 .main__button {
-  margin: 40px auto 20px;
+  margin: 60px auto 20px;
   font-style: normal;
   min-width: 300px;
-  max-width: 700px;
+  width: 600px;
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
@@ -78,6 +78,28 @@
   transition: all .3s ease-in-out;
 }
 .main__button_type_enter:hover {
+  color: var(--main-color);
+  background-color: var(--white-color);
+  box-shadow: 0 8px 12px -8px rgb(255 255 255 / 90%);
+  cursor: pointer;
+}
+.main__button_type_education {
+  margin: 20px auto 20px;
+  font-style: normal;
+  min-width: 300px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  text-align: center;
+  padding: 34px 22px;
+  border-radius: 10px;
+  color: var(--white-color);
+  background-color: var(--main-color);
+  box-shadow: 0 8px 12px -8px rgb(0 55 196 / 90%);
+  transition: all .3s ease-in-out;
+}
+.main__button_type_education:hover {
   color: var(--main-color);
   background-color: var(--white-color);
   box-shadow: 0 8px 12px -8px rgb(255 255 255 / 90%);
