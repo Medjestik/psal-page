@@ -7,6 +7,7 @@ import Main from '../Main/Main.js';
 import Description from '../Description/Description.js';
 import Projects from '../Projects/Projects.js';
 import Programs from '../Programs/Programs.js';
+import Courses from '../Courses/Courses.js';
 import Footer from '../Footer/Footer.js';
 import Qualification from '../Qualification/Qualification.js';
 import Education from '../Education/Education.js';
@@ -41,6 +42,7 @@ function App() {
           <Description windowWidth={windowWidth} />
           <Projects windowWidth={windowWidth} />
           <Programs />
+          <Courses />
           <Footer windowWidth={windowWidth} /> 
           </>
         }/>

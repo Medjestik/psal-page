@@ -52,13 +52,10 @@
   border-radius: 10px;
   color: var(--main-color);
   background-color: var(--white-color);
-  box-shadow: 0 8px 12px -8px rgb(255 255 255 / 90%);
   transition: all .3s ease-in-out;
 }
 .main__button:hover {
-  color: var(--white-color);
-  background-color: var(--main-color);
-  box-shadow: 0 8px 12px -8px rgb(0 55 196 / 90%);
+  box-shadow: 0 8px 12px -8px rgb(255 255 255 / 90%);
   cursor: pointer;
 }
 .main__button_type_enter {
@@ -78,9 +75,7 @@
   transition: all .3s ease-in-out;
 }
 .main__button_type_enter:hover {
-  color: var(--main-color);
-  background-color: var(--white-color);
-  box-shadow: 0 8px 12px -8px rgb(255 255 255 / 90%);
+  box-shadow: 0 8px 12px -8px rgb(0 55 196 / 90%);
   cursor: pointer;
 }
 .main__button_type_education {
@@ -96,13 +91,10 @@
   border-radius: 10px;
   color: var(--white-color);
   background-color: var(--main-color);
-  box-shadow: 0 8px 12px -8px rgb(0 55 196 / 90%);
   transition: all .3s ease-in-out;
 }
 .main__button_type_education:hover {
-  color: var(--main-color);
-  background-color: var(--white-color);
-  box-shadow: 0 8px 12px -8px rgb(255 255 255 / 90%);
+  box-shadow: 0 8px 12px -8px rgb(0 55 196 / 90%);
   cursor: pointer;
 }
 .main__arrow {

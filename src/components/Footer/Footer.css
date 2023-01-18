@@ -1,7 +1,6 @@
 .footer {
   margin: 0px;
   background: var(--main-color);
-  height: 284px;
   padding: 56px 80px 40px;
   box-sizing: border-box;
 }

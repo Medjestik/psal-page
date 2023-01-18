@@ -39,6 +39,7 @@ function Programs() {
                     <span key={i} className='programs__tag'>{tag}</span>
                   ))
                 }
+                <span className='programs__tag programs__tag_type_hours'>{elem.hours} ч.</span>
               </div>
               {
                 elem.active
@@ -50,6 +51,7 @@ function Programs() {
             </div>
             <div className='programs__bottom'>
               <p className='programs__text'>{elem.name}</p>
+              <span className='programs__more'>Подробнее &#8594;</span>
             </div>
           </li>
         ))

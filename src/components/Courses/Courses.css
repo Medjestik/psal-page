@@ -1,0 +1,28 @@
+.course {
+  width: 100%;
+  margin: 0px auto 0px;
+  padding: 0px 80px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 112px;
+}
+.course__round {
+  position: absolute;
+  top: 0px;
+  left: -42px;
+  width: 84px;
+  height: 84px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+.course__title {
+  margin: 0px auto 0px 0px;
+  max-width: 840px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 68px;
+  line-height: 86px;
+  text-align: left;
+  color: var(--title-color);
+}

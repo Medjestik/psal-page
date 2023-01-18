@@ -24,8 +24,9 @@ function Footer({ windowWidth }) {
               windowWidth > 1023 &&
               <div className='footer__title'></div>
             }
-            <Link className='footer__link' to='projects' smooth={true} offset={-80} duration= {1000}>проекты</Link>
-            <Link className='footer__link' to='programs' smooth={true} offset={-80} duration= {500}>программы</Link>
+            <Link className='footer__link' to='projects' smooth={true} offset={-80} duration= {1500}>проекты</Link>
+            <Link className='footer__link' to='programs' smooth={true} offset={-80} duration= {1000}>программы</Link>
+            <Link className='footer__link' to='courses' smooth={true} offset={-80} duration= {500}>online-курсы</Link>
           </div>
           <div className='footer__column footer__column_type_large'>
             <h4 className='footer__title'>Ресурсы</h4>
