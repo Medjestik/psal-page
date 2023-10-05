@@ -32,8 +32,12 @@ function Main({ windowWidth }) {
         <span className='main__marquee'>ЛИДЕРАМИ СТАНОВЯТСЯ</span>
       </Marquee>
         <>
-        <a className='main__button' href='https://dpo.emiit.ru/' target='_blank' rel='noreferrer'>Портал повышения квалификации</a>
-        <a className='main__button main__button_type_education' href='https://dpo.emiit.ru/' target='_blank' rel='noreferrer'>Портал online-курсов для студентов</a>
+        <a className='main__button' href='https://edu.emiit.ru/' target='_blank' rel='noreferrer'>Портал повышения квалификации</a>
+
+        {
+          <a className='main__button main__button_type_education' href='https://edu.emiit.ru/' target='_blank' rel='noreferrer'>Портал online-курсов для студентов</a>
+        }
+
         {
           /* <Link className='main__arrow' to='description' smooth={true} offset={20} duration= {1000}></Link> */
         }
